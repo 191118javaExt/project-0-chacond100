@@ -6,16 +6,29 @@ import com.revature.bankingapplication.Bank;
 import com.revature.bankingapplication.Customer;
 
 public class UserOptions {
+	int accountID;
+	int amount;
+	Bank userBank = new Bank();
+	Scanner scanner = new Scanner(System.in);	
 	
 	public void userActions() {
-		int accountID;
-		int amount;
-		Bank userBank = new Bank();
-		@SuppressWarnings("resource")
-		Scanner scanner = new Scanner(System.in);
+		
 		
 		System.out.println("Enter your account ID");
 		accountID = Integer.parseInt(scanner.nextLine());
+		
+		String usernamePassword = userBank.login(accountID);
+		System.out.println(usernamePassword);
+		System.out.println("Please enter your username");
+		String usernameInput = scanner.nextLine();
+		System.out.println("Please enter you password");
+		String passwordInput = scanner.nextLine();
+		String loginAttempt = usernameInput+passwordInput;
+	
+		if(loginAttempt.equals(usernamePassword)) {
+		
+		System.out.println("Log in attempt successful");
+		System.out.println("");
 		
 		System.out.println("1. View account");
 		System.out.println("2. Make a deposit");
@@ -65,5 +78,9 @@ public class UserOptions {
 		default:
 			break;
 			}
+		}else {
+			System.out.println("Log in attempt failed");
+			System.out.println("");
 		}
 	}
+}

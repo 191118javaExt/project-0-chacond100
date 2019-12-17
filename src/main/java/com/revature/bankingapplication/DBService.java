@@ -146,7 +146,6 @@ public class DBService{
 		return success;
 	}
 	
-	
 	//Delete
 	boolean deleteAccount(int accountID) {
 		boolean success = false;
@@ -192,6 +191,28 @@ public class DBService{
 		}
 		return customers;
 	}
+	
+	//Login
+	String login(int accountID) {
+		
+		String together = null;
+		try(Connection connection = connect()){
+		String findUserSql = "SELECT username, password FROM Users WHERE Users.ID=?";
+		PreparedStatement findUser = connection.prepareStatement(findUserSql);
+		findUser.setInt(1, accountID);
+		ResultSet findUserResults = findUser.executeQuery();
+		if(findUserResults.next()) { 
+		String username = findUserResults.getString("username");
+		String password = findUserResults.getString("password");
+		together = username+password;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} 
+		return together;
+	}
+	
 }
+
 
 

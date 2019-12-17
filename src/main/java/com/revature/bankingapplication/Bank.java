@@ -73,8 +73,14 @@ public class Bank implements Serializable{
 		}
 
 	public String updateStatus(int accountID, String status){
+		@SuppressWarnings("unused")
 		Customer customer = getAccount(accountID);
 		database.updateStatus(accountID, status);
 		return status;
+	}
+
+	public String login(int accountID) {
+		String userPassword = database.login(accountID);
+		return userPassword;
 	}
 }

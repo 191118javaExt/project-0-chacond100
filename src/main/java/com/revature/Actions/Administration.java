@@ -10,10 +10,16 @@ public class Administration {
 	
 	public void administrativeActions(){
 		Bank adminBank = new Bank();
-		
-		
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
+		String adminPassword = "Revature1";
+		System.out.println("Password confirmation needed");
+		System.out.println("Password:");
+		String passwordAttempt = scanner.nextLine();
+		if(passwordAttempt.equals(adminPassword)) {
+		
+		System.out.println("Access granted");
+		System.out.println("");
 		
 		System.out.println("1. View all accounts");
 		System.out.println("2. Delete single account");
@@ -94,5 +100,8 @@ public class Administration {
 		default:
 			break;
 		}
+	}else {
+		System.out.println("");
+		System.out.println("Incorrect Password");}
 	}
 }

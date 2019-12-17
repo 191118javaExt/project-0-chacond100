@@ -10,8 +10,18 @@ public class EmployeeOptions {
 	public void employeeActions() {
 		
 		Bank employeeBank = new Bank();
+		String employeePassword="Revature";
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Password confirmation required.");
+		System.out.println("Password:");
+		String passwordAttempt = scanner.nextLine();
+		
+		if(passwordAttempt.equals(employeePassword)) {
+		System.out.println("Access granted");
+		System.out.println("");
+		
 		System.out.println("1. View all accounts");
 		System.out.println("2. View single account");
 		System.out.println("3. Approve accounts");
@@ -59,5 +69,8 @@ public class EmployeeOptions {
 		default:
 			break;
 		}
+	}else {System.out.println("");	
+	System.out.println("Incorrect Password");
 	}
+}
 }
