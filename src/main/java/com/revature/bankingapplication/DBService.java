@@ -112,6 +112,27 @@ public class DBService{
 		return customer;
 	}
 	
+	String getUser(int accountID) {
+	String userInformation = null;
+	try(Connection connection = connect()){
+	String findUserSql = "SELECT * FROM Users WHERE Users.ID=?";
+	PreparedStatement findUser = connection.prepareStatement(findUserSql);
+	findUser.setInt(1, accountID);
+	ResultSet findUserResults = findUser.executeQuery();
+	if(findUserResults.next()) { 
+	String firstName = findUserResults.getString("firstName");
+	String lastName = findUserResults.getString("lastName");
+	String username = findUserResults.getString("username");
+	String password = findUserResults.getString("password");
+	
+	userInformation = "First name: " + firstName+ " Last name: " +lastName+ " Username: "+username+" Password: "+password;
+		}
+	} catch (SQLException e) {
+		e.printStackTrace();
+	} 
+	return userInformation;
+	}
+
 	//UpdateBalance
 	boolean updateAccount(int accountID, Double balance) {
 		boolean success = false;

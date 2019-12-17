@@ -37,6 +37,7 @@ public class EmployeeOptions {
 		case 2:
 			System.out.println("Enter the account ID of the account to be viewed");
 			acc_ID = Integer.parseInt(scanner.nextLine());
+			employeeBank.getUser(acc_ID);
 			employeeBank.getAccount(acc_ID);
 			System.out.println(employeeBank.getAccount(acc_ID));
 			break;

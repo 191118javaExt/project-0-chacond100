@@ -83,4 +83,10 @@ public class Bank implements Serializable{
 		String userPassword = database.login(accountID);
 		return userPassword;
 	}
+	
+	public String getUser(int accountID) {
+		String userInformation = database.getUser(accountID);
+		System.out.println(userInformation);
+		return userInformation;
+	}
 }

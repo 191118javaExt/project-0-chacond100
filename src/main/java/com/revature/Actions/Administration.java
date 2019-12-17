@@ -26,7 +26,9 @@ public class Administration {
 		System.out.println("3. Make deposit into account");
 		System.out.println("4. Make withdrawal from account");
 		System.out.println("5. Approve account");
-		System.out.println("6. Exit application");
+		System.out.println("6. View single account");
+		System.out.println("7. Transfer funds");
+		System.out.println("8. Exit application");
 		
 		int choice = Integer.parseInt(scanner.nextLine());
 		int acc_ID;
@@ -94,6 +96,38 @@ public class Administration {
 			}
 			break;
 		case 6:
+			System.out.println("Enter the ID of the account that you would like to view");
+			acc_ID = Integer.parseInt(scanner.nextLine());
+			adminBank.getUser(acc_ID);
+			adminBank.getAccount(acc_ID);
+			System.out.println(adminBank.getAccount(acc_ID));
+			break;
+		case 7:
+			int recievingAccountID;
+			int amountTransferred;
+			System.out.println("State the account ID that the funds will be transferred from");
+			int transferringAccountID = Integer.parseInt(scanner.nextLine());
+			System.out.println("State the account ID that the funds will be transferred to");
+			recievingAccountID = Integer.parseInt(scanner.nextLine());
+			System.out.println("State the amount to be transferred");
+			amountTransferred = Integer.parseInt(scanner.nextLine());
+			try {
+				adminBank.withdraw(transferringAccountID, amountTransferred);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			Customer withdrawalUpdate2 = adminBank.getAccount(transferringAccountID);
+			System.out.println(withdrawalUpdate2);
+			
+			try {
+				adminBank.deposit(recievingAccountID, amountTransferred);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			Customer depositUpdate2 = adminBank.getAccount(recievingAccountID);
+			System.out.println(depositUpdate2);
+			break;
+		case 8:
 			System.out.println("Thank you for visiting David's Banking Application");
 			System.exit(0);
 			break;

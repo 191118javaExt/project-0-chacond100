@@ -18,7 +18,6 @@ public class UserOptions {
 		accountID = Integer.parseInt(scanner.nextLine());
 		
 		String usernamePassword = userBank.login(accountID);
-		System.out.println(usernamePassword);
 		System.out.println("Please enter your username");
 		String usernameInput = scanner.nextLine();
 		System.out.println("Please enter you password");
@@ -34,7 +33,8 @@ public class UserOptions {
 		System.out.println("2. Make a deposit");
 		System.out.println("3. Make a withdrawal");
 		System.out.println("4. Delete account");
-		System.out.println("5. Exit application");
+		System.out.println("5. Transfer funds");
+		System.out.println("6. Exit application");
 		
 		int choice = Integer.parseInt(scanner.nextLine());
 		
@@ -72,6 +72,30 @@ public class UserOptions {
 			userBank.deleteAccount(accountID);
 			break;
 		case 5:
+			int recievingAccountID;
+			int amount;
+			
+			System.out.println("State the account ID that the funds will be transferred to");
+			recievingAccountID = Integer.parseInt(scanner.nextLine());
+			System.out.println("State the amount to be transferred");
+			amount = Integer.parseInt(scanner.nextLine());
+			try {
+				userBank.withdraw(accountID, amount);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			Customer withdrawalUpdate2 = userBank.getAccount(accountID);
+			System.out.println(withdrawalUpdate2);
+			
+			try {
+				userBank.deposit(recievingAccountID, amount);
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+			Customer depositUpdate2 = userBank.getAccount(recievingAccountID);
+			System.out.println(depositUpdate2);
+			break;
+		case 6:
 			System.out.println("Thank you for visiting David's Banking Application");
 			System.exit(0);
 			break;
