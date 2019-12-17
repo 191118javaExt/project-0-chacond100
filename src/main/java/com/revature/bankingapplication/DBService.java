@@ -103,11 +103,11 @@ public class DBService{
 			customer = new Customer(account);
 		}
 		else {
-			System.err.println("No user account was found for ID"+" accountID");
+			logger.warn("No user account was found for ID"+ accountID);
 			}
 		findUserResults.close();
 		}catch(Exception e) {
-			System.err.println(e.getMessage());
+			logger.warn("Unable to retrieve account", e);
 		}
 		return customer;
 	}
@@ -128,6 +128,7 @@ public class DBService{
 	userInformation = "First name: " + firstName+ " Last name: " +lastName+ " Username: "+username+" Password: "+password;
 		}
 	} catch (SQLException e) {
+		logger.warn("Unable to retrieve User", e);
 		e.printStackTrace();
 	} 
 	return userInformation;
@@ -208,7 +209,7 @@ public class DBService{
 		}
 		findUserResults.close();
 		}catch(Exception e) {
-			System.err.println(e.getMessage());
+			logger.warn("Unable to retrieve all accounts");
 		}
 		return customers;
 	}
@@ -228,7 +229,7 @@ public class DBService{
 		together = username+password;
 			}
 		} catch (SQLException e) {
-			e.printStackTrace();
+			logger.warn("Unable to succesfully log in");
 		} 
 		return together;
 	}

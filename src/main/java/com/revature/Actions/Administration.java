@@ -3,15 +3,20 @@ package com.revature.Actions;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import org.apache.log4j.Logger;
+
 import com.revature.bankingapplication.Bank;
 import com.revature.bankingapplication.Customer;
 
 public class Administration {
 	
+	final static Logger logger = Logger.getLogger(Administration.class);
+	
 	public void administrativeActions(){
 		Bank adminBank = new Bank();
 		@SuppressWarnings("resource")
 		Scanner scanner = new Scanner(System.in);
+		try {
 		String adminPassword = "Revature1";
 		System.out.println("Password confirmation needed");
 		System.out.println("Password:");
@@ -137,5 +142,8 @@ public class Administration {
 	}else {
 		System.out.println("");
 		System.out.println("Incorrect Password");}
+	}catch(Exception e) {
+		System.out.println("Invalid input");
 	}
+}
 }

@@ -5,8 +5,14 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.util.ArrayList;
 
+import org.apache.log4j.Logger;
+
+import com.revature.Actions.UserOptions;
+
 @SuppressWarnings("serial")
 public class Bank implements Serializable{
+	
+	final static Logger logger = Logger.getLogger(UserOptions.class);
 	
 	private DBService database = new DBService();
 	

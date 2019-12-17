@@ -215,3 +215,19 @@ org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
 	at com.revature.Actions.UserOptions.userActions(UserOptions.java:31)
 	at com.revature.Menu.menuSelection(Menu.java:31)
 	at com.revature.Driver.main(Driver.java:7)
+2019-12-17 13:36:35 INFO  UserOptions:33 - Succesful log in attempt
+2019-12-17 13:36:41 INFO  UserOptions:50 - Account 7 retrieved succesfully
+2019-12-17 13:57:43 INFO  EmployeeOptions:27 - Succesful employee account verification
+2019-12-17 13:57:55 WARN  DBService:212 - Unable to retrieve all accounts
+2019-12-17 13:57:55 INFO  EmployeeOptions:42 - Succesfully retrieved all accounts
+2019-12-17 14:00:22 INFO  CustomerOptions:55 - Succesfully created new account
+2019-12-17 14:01:03 INFO  UserOptions:119 - Failed user account verification
+2019-12-17 14:01:16 INFO  UserOptions:33 - Succesful user account verification
+2019-12-17 14:01:47 INFO  UserOptions:50 - Account 8 retrieved succesfully
+2019-12-17 14:02:07 INFO  UserOptions:33 - Succesful user account verification
+2019-12-17 14:02:17 INFO  UserOptions:58 - Succesfully deposited 1000 into account 8
+2019-12-17 14:02:59 INFO  UserOptions:119 - Failed user account verification
+2019-12-17 14:03:27 INFO  UserOptions:33 - Succesful user account verification
+2019-12-17 14:49:33 INFO  UserOptions:33 - Succesful user account verification
+2019-12-17 15:12:36 INFO  CustomerOptions:62 - Succesfully created new account
+2019-12-17 15:18:02 INFO  CustomerOptions:58 - Succesfully created new account
