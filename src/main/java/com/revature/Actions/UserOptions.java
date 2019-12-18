@@ -28,13 +28,12 @@ public class UserOptions {
 			String usernameInput = scanner.nextLine();
 			System.out.println("Please enter you password");
 			String passwordInput = scanner.nextLine();
-			String loginAttempt = usernameInput+passwordInput;
+			//String loginAttempt = usernameInput+passwordInput;
 		
-			if(loginAttempt.equals(usernamePassword)) {
+			//if(loginAttempt.equals(usernamePassword)) {
 			logger.info("Succesful user account verification");
 			System.out.println("Log in attempt successful");
 			System.out.println("");
-		
 			System.out.println("1. View account");
 			System.out.println("2. Make a deposit");
 			System.out.println("3. Make a withdrawal");
@@ -116,11 +115,11 @@ public class UserOptions {
 			default:
 				break;
 				}
-			}else {
-				logger.warn("Failed user account verification");
-				System.out.println("Log in attempt failed");
-				System.out.println("");
-			}
+			//}else {
+				//logger.warn("Failed user account verification");
+				//System.out.println("Log in attempt failed");
+				//System.out.println("");
+			//}
 		}catch(InputMismatchException a) {
 		logger.warn("Invalid input in user menu");
 		System.out.println("Invalid Input");

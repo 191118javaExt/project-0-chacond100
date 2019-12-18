@@ -218,7 +218,7 @@ public class DBService{
 		
 		String together = null;
 		try(Connection connection = connect()){
-		String findUserSql = "SELECT username, password FROM Users WHERE Users.ID=?";
+		String findUserSql = "SELECT username, password FROM Users WHERE User.ID=?";
 		PreparedStatement findUser = connection.prepareStatement(findUserSql);
 		findUser.setInt(1, accountID);
 		ResultSet findUserResults = findUser.executeQuery();
@@ -228,7 +228,7 @@ public class DBService{
 		together = username+password;
 			}
 		} catch (SQLException e) {
-			logger.warn("Unable to succesfully log in");
+			//logger.warn("Unable to succesfully log in");
 		} 
 		return together;
 	}

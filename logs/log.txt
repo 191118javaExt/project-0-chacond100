@@ -300,3 +300,156 @@ java.lang.Exception: Unknown account type
 2019-12-18 10:16:33 WARN  UserOptions:120 - Failed user account verification
 2019-12-18 10:16:51 WARN  UserOptions:120 - Failed user account verification
 2019-12-18 10:30:08 WARN  DBService:106 - No user account was found for ID11
+2019-12-18 10:30:43 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 10:35:01 WARN  UserOptions:120 - Failed user account verification
+2019-12-18 10:35:28 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 10:35:46 WARN  UserOptions:120 - Failed user account verification
+2019-12-18 10:36:32 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 10:36:38 WARN  DBService:106 - No user account was found for ID9
+2019-12-18 10:36:38 INFO  UserOptions:51 - Account 9 retrieved succesfully
+2019-12-18 10:38:46 INFO  Administration:52 - Succesfully deleted account 1
+2019-12-18 10:39:03 INFO  Administration:52 - Succesfully deleted account 2
+2019-12-18 10:40:32 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 10:41:19 WARN  UserOptions:120 - Failed user account verification
+2019-12-18 10:45:03 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 10:50:21 WARN  UserOptions:120 - Failed user account verification
+2019-12-18 10:54:14 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 10:56:21 WARN  Menu:53 - Invalid input during menu selection
+2019-12-18 10:56:41 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 10:56:56 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 10:57:08 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 10:57:25 WARN  CustomerOptions:61 - Invalid input in the customer menu
+2019-12-18 10:57:26 WARN  Menu:53 - Invalid input during menu selection
+2019-12-18 10:57:37 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 10:57:52 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 10:58:25 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 10:58:38 INFO  UserOptions:51 - Account 11 retrieved succesfully
+2019-12-18 10:58:58 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 10:59:03 INFO  UserOptions:59 - Succesfully deposited 500 into account 11
+2019-12-18 10:59:56 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 11:00:41 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 11:01:10 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 11:01:36 WARN  UserOptions:120 - Failed user account verification
+2019-12-18 11:06:06 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 11:06:23 WARN  DBService:231 - Unable to succesfully log in
+2019-12-18 11:07:00 WARN  DBService:231 - Unable to succesfully log in
+2019-12-18 11:07:12 WARN  UserOptions:120 - Failed user account verification
+2019-12-18 11:07:56 WARN  DBService:231 - Unable to succesfully log in
+2019-12-18 11:08:01 WARN  UserOptions:120 - Failed user account verification
+2019-12-18 11:08:26 INFO  Administration:46 - Succesfully retrieved all accounts
+2019-12-18 11:08:59 WARN  DBService:231 - Unable to succesfully log in
+2019-12-18 11:09:06 WARN  UserOptions:120 - Failed user account verification
+2019-12-18 11:09:43 WARN  DBService:231 - Unable to succesfully log in
+2019-12-18 11:09:52 WARN  UserOptions:120 - Failed user account verification
+2019-12-18 11:10:24 INFO  Administration:115 - Acccount 14 succesfully retrieved 
+2019-12-18 11:11:43 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 11:12:15 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 11:12:29 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 11:12:46 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 11:12:59 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 11:13:09 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 11:13:50 WARN  DBService:231 - Unable to succesfully log in
+2019-12-18 11:14:01 WARN  UserOptions:120 - Failed user account verification
+2019-12-18 11:19:39 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 11:20:09 WARN  DBService:231 - Unable to succesfully log in
+2019-12-18 11:20:13 WARN  UserOptions:120 - Failed user account verification
+2019-12-18 11:22:33 WARN  DBService:231 - Unable to succesfully log in
+2019-12-18 11:22:38 WARN  UserOptions:119 - Failed user account verification
+2019-12-18 11:23:09 WARN  DBService:231 - Unable to succesfully log in
+2019-12-18 11:23:45 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 11:23:47 INFO  EmployeeOptions:43 - Succesfully retrieved all accounts
+2019-12-18 11:23:55 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 11:24:02 INFO  EmployeeOptions:50 - Succesfully viewed account 15
+2019-12-18 11:25:17 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 11:25:40 WARN  DBService:231 - Unable to succesfully log in
+2019-12-18 11:25:47 WARN  UserOptions:119 - Failed user account verification
+2019-12-18 11:30:37 WARN  DBService:231 - Unable to succesfully log in
+2019-12-18 11:30:43 WARN  UserOptions:119 - Failed user account verification
+2019-12-18 11:30:52 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 11:30:56 WARN  DBService:106 - No user account was found for ID2
+2019-12-18 11:30:56 INFO  EmployeeOptions:50 - Succesfully viewed account 2
+2019-12-18 11:30:56 WARN  DBService:106 - No user account was found for ID2
+2019-12-18 11:31:25 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 11:31:37 INFO  EmployeeOptions:50 - Succesfully viewed account 6
+2019-12-18 11:32:16 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 11:32:20 WARN  DBService:106 - No user account was found for ID9
+2019-12-18 11:32:20 INFO  EmployeeOptions:50 - Succesfully viewed account 9
+2019-12-18 11:32:20 WARN  DBService:106 - No user account was found for ID9
+2019-12-18 11:32:56 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 11:33:10 INFO  EmployeeOptions:50 - Succesfully viewed account 10
+2019-12-18 11:33:59 WARN  DBService:231 - Unable to succesfully log in
+2019-12-18 11:34:07 WARN  UserOptions:119 - Failed user account verification
+2019-12-18 11:35:13 WARN  DBService:231 - Unable to succesfully log in
+2019-12-18 11:35:46 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 11:36:03 INFO  UserOptions:50 - Account 10 retrieved succesfully
+2019-12-18 11:36:11 WARN  DBService:231 - Unable to succesfully log in
+2019-12-18 11:36:16 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 11:36:23 INFO  UserOptions:58 - Succesfully deposited 100 into account 10
+2019-12-18 11:37:00 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 11:37:54 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 11:38:18 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 11:38:37 WARN  DBService:106 - No user account was found for ID28
+2019-12-18 11:38:37 WARN  UserOptions:61 - Failed to deposit1500 into account 28
+2019-12-18 11:38:37 WARN  DBService:106 - No user account was found for ID28
+2019-12-18 11:39:26 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 11:39:34 INFO  UserOptions:58 - Succesfully deposited 1500 into account 22
+2019-12-18 11:41:08 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 11:41:09 INFO  EmployeeOptions:43 - Succesfully retrieved all accounts
+2019-12-18 11:42:12 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 11:44:30 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 11:44:37 INFO  UserOptions:58 - Succesfully deposited 500 into account 20
+2019-12-18 11:45:12 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 11:45:30 INFO  EmployeeOptions:65 - Acccount 20 status set to Active
+2019-12-18 11:46:33 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 11:46:47 INFO  UserOptions:93 - Succesfully withdrew 20 from account 20
+2019-12-18 11:46:47 INFO  UserOptions:103 - Succesfully deposited 20 into account 20
+2019-12-18 11:47:37 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 11:47:42 INFO  EmployeeOptions:50 - Succesfully viewed account 20
+2019-12-18 11:59:46 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 11:59:53 WARN  UserOptions:74 - Failed to withdraw 50000 from account 20
+2019-12-18 12:00:11 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 12:00:21 WARN  UserOptions:74 - Failed to withdraw 5000 from account 20
+2019-12-18 12:00:31 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 12:00:37 WARN  UserOptions:61 - Failed to deposit-50 into account 20
+2019-12-18 13:06:55 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 13:07:18 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 13:07:24 INFO  UserOptions:58 - Succesfully deposited 1000 into account 23
+2019-12-18 13:07:38 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 13:07:49 INFO  UserOptions:50 - Account 23 retrieved succesfully
+2019-12-18 13:08:03 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 13:08:10 INFO  EmployeeOptions:43 - Succesfully retrieved all accounts
+2019-12-18 13:08:18 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 13:08:21 INFO  EmployeeOptions:43 - Succesfully retrieved all accounts
+2019-12-18 13:08:33 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 13:08:50 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 13:08:57 INFO  EmployeeOptions:65 - Acccount 23 status set to Active
+2019-12-18 13:11:23 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 13:11:26 INFO  UserOptions:50 - Account 23 retrieved succesfully
+2019-12-18 13:19:12 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 13:19:19 INFO  UserOptions:58 - Succesfully deposited 1000 into account 20
+2019-12-18 13:34:56 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 13:35:01 INFO  UserOptions:50 - Account 20 retrieved succesfully
+2019-12-18 13:47:56 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 13:48:02 WARN  Menu:53 - Invalid input during menu selection
+2019-12-18 13:48:15 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 13:48:19 WARN  Menu:53 - Invalid input during menu selection
+2019-12-18 13:48:40 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 13:48:43 INFO  UserOptions:58 - Succesfully deposited 20 into account 20
+2019-12-18 13:51:48 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 13:51:57 INFO  EmployeeOptions:71 - Acccount 20 denied approval 
+2019-12-18 13:52:10 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 13:52:15 INFO  EmployeeOptions:65 - Acccount 20 status set to Active
+2019-12-18 15:15:19 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 15:15:24 WARN  UserOptions:74 - Failed to withdraw 5000 from account 20
+2019-12-18 15:31:00 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 15:31:27 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 15:32:05 INFO  EmployeeOptions:65 - Acccount 24 status set to Active
+2019-12-18 15:32:29 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 15:32:41 INFO  UserOptions:58 - Succesfully deposited 5000 into account 24
+2019-12-18 15:33:33 INFO  Administration:46 - Succesfully retrieved all accounts
+2019-12-18 15:34:30 INFO  UserOptions:34 - Succesful user account verification
+2019-12-18 15:34:52 INFO  UserOptions:93 - Succesfully withdrew 100 from account 24
+2019-12-18 15:34:52 INFO  UserOptions:103 - Succesfully deposited 100 into account 24
+2019-12-18 15:35:32 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 15:35:56 WARN  EmployeeOptions:91 - Invalid input in employee menu
+2019-12-18 15:36:06 INFO  EmployeeOptions:85 - Failed account verification
