@@ -187,29 +187,28 @@ public class DBService{
 	//Get All Accounts
 	ArrayList<Customer> getAllAccounts(){
 		ArrayList<Customer> customers = new ArrayList<>();
-		//Connection connection = connect();
-		try (Connection connection = connect()){
+		Connection connection = connect();
+		try {
 		String findAllUsersSql = "SELECT * FROM Accounts";
 		PreparedStatement findAllUsers = connection.prepareStatement(findAllUsersSql);
 		ResultSet findUserResults = findAllUsers.executeQuery();
 		while(findUserResults.next()) {
 			AccountType accountType=AccountType.valueOf(findUserResults.getString("Type")); 
-			Double balance=findUserResults.getDouble("Balance");
+			Double balance = findUserResults.getDouble("Balance");
 			int accountID = findUserResults.getInt("ID");
-			String status =findUserResults.getString("Status");
+			String status = findUserResults.getString("Status");
 			Account account;
 			if(accountType == AccountType.Checking) {
 				account = new Checking(accountID, balance, status);
-		}else if (accountType == AccountType.Savings){
+			}else if (accountType == AccountType.Savings){
 				account = new Savings(accountID, balance, status);
-		}else {
-			throw new Exception("Unknown account type");
+			}else {
+				throw new Exception("Unknown account type");
 			}
 			customers.add(new Customer(account));
 		}
-		findUserResults.close();
 		}catch(Exception e) {
-			logger.warn("Unable to retrieve all accounts");
+			e.printStackTrace();
 		}
 		return customers;
 	}

@@ -117,7 +117,7 @@ public class UserOptions {
 				break;
 				}
 			}else {
-				logger.info("Failed user account verification");
+				logger.warn("Failed user account verification");
 				System.out.println("Log in attempt failed");
 				System.out.println("");
 			}

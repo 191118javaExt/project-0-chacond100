@@ -43,11 +43,13 @@ public class Administration {
 		case 1:
 			ArrayList<Customer> allAccounts = adminBank.getAllAccounts();
 			System.out.println(allAccounts);
+			logger.info("Succesfully retrieved all accounts");
 			break;
 		case 2:
 			System.out.println("Enter the ID of the account that you would like to delete");
 			acc_ID = Integer.parseInt(scanner.nextLine());
 			adminBank.deleteAccount(acc_ID);
+			logger.info("Succesfully deleted account "+acc_ID);
 			break;
 		case 3:
 			System.out.println("State the account that you would you like to make a deposit into");
@@ -58,8 +60,9 @@ public class Administration {
 				adminBank.deposit(acc_ID, amount);
 				Customer customer= adminBank.getAccount(acc_ID);
 				System.out.println(customer);
+				logger.info("Succesfully deposited "+amount+" into account "+acc_ID);
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
+				logger.warn("Failed to succesfully deposit "+amount+" into account "+acc_ID);
 				e.printStackTrace();
 			}
 			break;
@@ -72,8 +75,9 @@ public class Administration {
 				adminBank.withdraw(acc_ID, amount);
 				Customer customer= adminBank.getAccount(acc_ID);
 				System.out.println(customer);
+				logger.info("Succesfully withdrew "+amount+" from account "+acc_ID);
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
+				logger.warn("Failed to succesfully withdraw "+amount+" from account "+acc_ID);
 				e.printStackTrace();
 			}
 			break;
@@ -89,11 +93,13 @@ public class Administration {
 				status = "Active";
 				adminBank.updateStatus(acc_ID, status);
 				System.out.println("Account approved");
+				logger.info("Acccount "+acc_ID+" status set to "+status);
 				break;
 			case 2:
 				status = "Declined";
 				adminBank.updateStatus(acc_ID, status);
 				System.out.println("Account not approved");
+				logger.info("Acccount "+acc_ID+" denied approval ");
 				break;
 			default:
 				System.out.println("Response not-valid");
@@ -106,6 +112,7 @@ public class Administration {
 			adminBank.getUser(acc_ID);
 			adminBank.getAccount(acc_ID);
 			System.out.println(adminBank.getAccount(acc_ID));
+			logger.info("Acccount "+acc_ID+" succesfully retrieved ");
 			break;
 		case 7:
 			int recievingAccountID;

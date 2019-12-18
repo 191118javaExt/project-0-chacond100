@@ -40,6 +40,7 @@ public class EmployeeOptions {
 		case 1:
 			ArrayList<Customer> allAccounts = employeeBank.getAllAccounts();
 			System.out.println(allAccounts);
+			logger.info("Succesfully retrieved all accounts");
 			break;
 		case 2:
 			System.out.println("Enter the account ID of the account to be viewed");
@@ -61,11 +62,13 @@ public class EmployeeOptions {
 				status = "Active";
 				employeeBank.updateStatus(accountID, status);
 				System.out.println("Account approved");
+				logger.info("Acccount "+accountID+" status set to "+status);
 				break;
 			case 2:
 				status = "Declined";
 				employeeBank.updateStatus(accountID, status);
 				System.out.println("Account not approved");
+				logger.info("Acccount "+accountID+" denied approval ");
 				break;
 			default:
 				System.out.println("Response not-valid");

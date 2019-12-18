@@ -231,3 +231,56 @@ org.postgresql.util.PSQLException: FATAL: sorry, too many clients already
 2019-12-17 14:49:33 INFO  UserOptions:33 - Succesful user account verification
 2019-12-17 15:12:36 INFO  CustomerOptions:62 - Succesfully created new account
 2019-12-17 15:18:02 INFO  CustomerOptions:58 - Succesfully created new account
+2019-12-17 15:27:30 INFO  UserOptions:120 - Failed user account verification
+2019-12-17 15:28:30 INFO  UserOptions:120 - Failed user account verification
+2019-12-17 15:35:43 INFO  UserOptions:120 - Failed user account verification
+2019-12-17 15:44:29 INFO  EmployeeOptions:82 - Failed account verification
+2019-12-17 15:44:37 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-17 18:39:25 WARN  Menu:53 - Invalid input during menu selection
+2019-12-17 18:39:57 WARN  Menu:53 - Invalid input during menu selection
+2019-12-17 18:40:31 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-17 18:42:15 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-17 18:43:33 INFO  UserOptions:120 - Failed user account verification
+2019-12-17 18:46:37 INFO  UserOptions:34 - Succesful user account verification
+2019-12-17 18:46:40 INFO  UserOptions:51 - Account 11 retrieved succesfully
+2019-12-17 18:46:59 INFO  UserOptions:34 - Succesful user account verification
+2019-12-17 18:47:06 INFO  UserOptions:59 - Succesfully deposited 1000 into account 11
+2019-12-17 18:47:22 INFO  UserOptions:34 - Succesful user account verification
+2019-12-17 18:47:34 INFO  UserOptions:72 - Succesfully withdrew 495 from account 11
+2019-12-17 18:48:05 INFO  UserOptions:34 - Succesful user account verification
+2019-12-17 18:48:25 INFO  UserOptions:94 - Succesfully withdrew 100 from account 11
+2019-12-17 18:48:25 INFO  UserOptions:104 - Succesfully deposited 100 into account 11
+2019-12-17 18:49:52 INFO  UserOptions:120 - Failed user account verification
+2019-12-17 18:50:02 INFO  UserOptions:34 - Succesful user account verification
+2019-12-17 18:50:07 INFO  UserOptions:82 - Succesfully deleted account 11
+2019-12-17 18:50:32 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-17 18:50:37 WARN  DBService:212 - Unable to retrieve all accounts
+2019-12-17 18:55:06 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-17 18:55:09 WARN  DBService:212 - Unable to retrieve all accounts
+2019-12-17 18:55:30 WARN  DBService:212 - Unable to retrieve all accounts
+2019-12-17 19:04:17 WARN  DBService:212 - Unable to retrieve all accounts
+2019-12-17 19:05:19 WARN  Menu:53 - Invalid input during menu selection
+2019-12-17 19:05:38 WARN  DBService:212 - Unable to retrieve all accounts
+2019-12-17 19:13:14 WARN  DBService:211 - Unable to retrieve all accounts
+2019-12-17 19:14:05 WARN  DBService:211 - Unable to retrieve all accounts
+2019-12-17 19:28:13 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-17 19:28:16 WARN  DBService:211 - Failed to retrieve all accounts
+2019-12-17 19:28:27 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-17 19:28:30 INFO  EmployeeOptions:49 - Succesfully viewed account 12
+2019-12-17 19:42:37 WARN  DBService:110 - Unable to retrieve account
+java.lang.Exception: Unknown account type
+	at com.revature.bankingapplication.DBService.getAccount(DBService.java:101)
+	at com.revature.bankingapplication.Bank.getAccount(Bank.java:24)
+	at com.revature.bankingapplication.Bank.updateStatus(Bank.java:83)
+	at com.revature.Actions.Administration.administrativeActions(Administration.java:90)
+	at com.revature.Menu.menuSelection(Menu.java:43)
+	at com.revature.Driver.main(Driver.java:7)
+2019-12-17 19:46:11 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-17 19:48:24 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-17 19:48:36 INFO  EmployeeOptions:49 - Succesfully viewed account 10
+2019-12-17 19:48:56 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-17 19:49:55 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-17 20:07:16 INFO  Administration:46 - Succesfully retrieved all accounts
+2019-12-17 20:07:59 INFO  Administration:63 - Succesfully deposited 1000 into account 9
+2019-12-17 20:08:29 INFO  Administration:78 - Succesfully withdrew 100 from account 9
+2019-12-17 20:09:10 INFO  Administration:102 - Acccount 12 denied approval 
