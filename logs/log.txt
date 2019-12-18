@@ -284,3 +284,19 @@ java.lang.Exception: Unknown account type
 2019-12-17 20:07:59 INFO  Administration:63 - Succesfully deposited 1000 into account 9
 2019-12-17 20:08:29 INFO  Administration:78 - Succesfully withdrew 100 from account 9
 2019-12-17 20:09:10 INFO  Administration:102 - Acccount 12 denied approval 
+2019-12-18 09:47:31 WARN  DBService:106 - No user account was found for ID10
+2019-12-18 09:52:37 WARN  DBService:106 - No user account was found for ID10
+2019-12-18 09:58:04 WARN  DBService:106 - No user account was found for ID10
+2019-12-18 10:02:25 WARN  DBService:106 - No user account was found for ID10
+2019-12-18 10:02:51 WARN  DBService:106 - No user account was found for ID10
+2019-12-18 10:06:11 WARN  DBService:106 - No user account was found for ID10
+2019-12-18 10:06:11 WARN  DBService:106 - No user account was found for ID11
+2019-12-18 10:10:38 WARN  DBService:106 - No user account was found for ID10
+2019-12-18 10:10:38 WARN  DBService:106 - No user account was found for ID11
+2019-12-18 10:14:25 INFO  Administration:46 - Succesfully retrieved all accounts
+2019-12-18 10:14:52 INFO  CustomerOptions:57 - Succesfully created new account
+2019-12-18 10:15:00 INFO  EmployeeOptions:28 - Succesful employee account verification
+2019-12-18 10:16:14 WARN  UserOptions:120 - Failed user account verification
+2019-12-18 10:16:33 WARN  UserOptions:120 - Failed user account verification
+2019-12-18 10:16:51 WARN  UserOptions:120 - Failed user account verification
+2019-12-18 10:30:08 WARN  DBService:106 - No user account was found for ID11
